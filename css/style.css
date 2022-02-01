@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+/* titulo do jogo */
+
+header{
+	margin: 47px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+header p{
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 66px;
+color: #75B79E;
+}
+
+/* definindo a cor do fundo */
+body{
+	background-color: #EEF9BF;
+}
+
+/* definindo as cartas */
+.cartas{
+	
+}
