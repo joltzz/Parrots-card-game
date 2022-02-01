@@ -19,6 +19,8 @@ font-weight: 700;
 font-size: 56px;
 line-height: 66px;
 color: #75B79E;
+text-align: center;
+vertical-align: Top;
 }
 
 /* definindo a cor do fundo */
@@ -27,6 +29,25 @@ body{
 }
 
 /* definindo as cartas */
+
 .cartas{
-	
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.carta{
+	width: 117px;
+	height: 146px;
+	background-color: #A7E9AF;
+	border: 1px solid #99CEA8;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carta img{
+	width: 100px;
+	height: 100px;
 }
