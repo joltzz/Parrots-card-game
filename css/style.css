@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
 	box-sizing: border-box;
 }
 
 /* titulo do jogo */
-
 header{
 	width: 100%;
     display: flex;
@@ -12,13 +12,13 @@ header{
     justify-content: center;
     align-items: center;
     margin: 40px auto;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 66px;
-    letter-spacing: -0.004em;
-    color: #75B79E;
+	font-family: 'Roboto';
+}
+header h1{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 56px;
+	color: #75B79E;
 }
 
 header p{
@@ -80,4 +80,16 @@ main{
 }
 .cartaFrente{
     transform: rotateY(180deg);
+}
+/* versão mobile */
+@media (max-width: 425px){
+    header{
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+        flex-wrap: none;
+    }
 }
