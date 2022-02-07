@@ -6,7 +6,7 @@ window.addEventListener("resize", function () {
 
 comecarNovoJogo();
 
-// gestiona o click nas cartas
+// Gestiona o click nas cartas
 
 function handle_click(elemento) {
 
@@ -43,11 +43,13 @@ function handle_click(elemento) {
         }
     }
 }
+//Função especifica para virar as cartas
 
 function virarCarta(elemento) {
     elemento.querySelector(".verso").classList.toggle("virada");
     elemento.querySelector(".frente").classList.toggle("virada");
 }
+//Função de comparar as cartas
 
 function compararCartas() {
 
@@ -76,7 +78,7 @@ function compararCartas() {
     impedeSelecao = false;
 }
 
-// verificar fim do jogo
+//  Função de verificar o fim do jogo
 let mensagemVitoria;
 
 function verificarFimJogo() {
@@ -100,6 +102,7 @@ function verificarFimJogo() {
         setTimeout(encerrarJogo, 300 );
     }
 }
+//Cronometro
 
 function startChronometer() {
     T0 = new Date();
@@ -118,16 +121,19 @@ function partialTime() {
     }
 }
 
+// Atualiza o relogio (startNewGame.js)
 function atualizarRelogio() {
     let elemento = document.querySelector(".tempo p");
     elemento.innerHTML = strTempo();
 }
 
+// Atualiza a pontuação a cada jogada(startNewGame.js)
 function atualizarPuntuacao() {
     let elemento = document.querySelector(".puntuacao p");
     elemento.innerHTML = contadorJogadas;
 }
 
+// Função para calcular o tempo em min e seg
 function strTempo() {
     let seg = T % 60;
     let min = Math.trunc(T / 60);
@@ -143,7 +149,7 @@ function strTempo() {
     return min + ":" + seg;
 }
 
-
+// Função de acabar o jogo
 function encerrarJogo() {
 
     alert(mensagemVitoria);

@@ -34,13 +34,13 @@ function comecarNovoJogo() {
     contadorJogadas = 0;
 
     // escolhe os logos aleatoriamente 
-    var logos = [0,1,2,3,4,5,6];
+    let logos = [0,1,2,3,4,5,6];
     
     logos.sort(function () {
         return 0.5 - Math.random();
     });
 
-    var cont = 0;
+    let cont = 0;
     for (let i = 0; i < num_cartas; i += 2) {
         indexConteudo.push(logos[cont]);
         indexConteudo.push(logos[cont]);
@@ -61,17 +61,17 @@ function comecarNovoJogo() {
 
     // Cria as cartas HTML
 
-    var aux = "";
+    let aux = "";
     for (let i = 0; i < num_cartas; i++) {
-        var logo = indexConteudo[i];
+        let logo = indexConteudo[i];
 
         aux += `
         <div id="carta${i}" class="carta" onclick="handle_click(this)" data-identifier="card" >
             <div class="verso face" data-identifier="back-face">
-                <img src="files/front.png" alt="">
+                <img src="imgs/front.png" alt="">
             </div>
             <div class="frente face virada" data-identifier="front-face">
-                <img src="files/logo${logo}.svg" alt="">
+                <img src="imgs/logo${logo}.svg" alt="">
             </div>
         </div>
         `;
@@ -92,10 +92,10 @@ function comecarNovoJogo() {
 }
 
 function centralizarCartas() {
-    var tamCarta = 34 + 117 + 2;
-    var cartasPorTela = Math.trunc(window.innerWidth / tamCarta);
-    var larguraFila = cartasPorTela * tamCarta;
-    var margem = Math.trunc((window.innerWidth - larguraFila) / 2);
+    let tamCarta = 34 + 117 + 2;
+    let cartasPorTela = Math.trunc(window.innerWidth / tamCarta);
+    let larguraFila = cartasPorTela * tamCarta;
+    let margem = Math.trunc((window.innerWidth - larguraFila) / 2);
 
     var elemento = document.querySelector(".cartas");
     elemento.style.margin = "auto " + margem + "px";

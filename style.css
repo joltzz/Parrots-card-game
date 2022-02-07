@@ -27,6 +27,8 @@ h1 {
     margin-right: 10px;
 }
 
+    /* Cartas */
+
 .cartas {
     display: flex;
     flex-direction: row;
@@ -60,10 +62,11 @@ h1 {
     transform-style: preserve-3d;
     backface-visibility: hidden;
 
-    /* compatibildiade iOS */
+    /* compatibildiade do iOS */
     -webkit-backface-visibility: hidden;
 }
 
+    /* Funções das cartas */
 .carta img {
     width: 100px;
     height: auto;
