@@ -1,0 +1,153 @@
+body {
+    background-color: #eef9bf;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    text-align: center;
+
+    color: #75b79e;
+
+    text-align: center;
+    vertical-align: Top;
+    letter-spacing: -0.4%;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carta {
+    width: 117px;
+    height: 146px;
+    margin: 17px;
+    position: relative;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a7e9af;
+    border: 1px solid #99cea8;
+    border-radius: 5px;
+
+    position: absolute;
+
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+
+    /* compatibildiade iOS */
+    -webkit-backface-visibility: hidden;
+}
+
+.carta img {
+    width: 100px;
+    height: auto;
+}
+
+.virada {
+    transform: rotateY(180deg);
+}
+
+.encontrada {
+    border-color: green;
+    filter: drop-shadow( 1px 1px 2px rgb(100,125,100) );
+    -webkit-filter: drop-shadow( 1px 1px 2px rgb(100,125,100) );
+}
+
+/* Bonus */
+
+.info-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.oculto {
+    display: none;
+}
+
+.tempo,
+.puntuacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70px;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    margin-right: 12px;
+}
+
+ion-icon {
+    font-size: 20px;
+    color: rgb(9, 105, 9);
+
+    margin-right: 5px;
+}
+
+.puntuacao p {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Roboto;
+    color: rgb(9, 105, 9);
+}
+
+.tempo p {
+    font-size: 16px;
+    font-family: Roboto;
+    color: rgb(9, 105, 9);
+}
+
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: -0.004em;
+        text-align: center;
+
+        color: #75b79e;
+    
+        text-align: center;
+        vertical-align: Top;
+        letter-spacing: -0.4%;
+    
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}

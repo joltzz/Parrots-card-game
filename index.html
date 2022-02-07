@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🦜Parrots Card Game🦜</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!--titulo do jogo-->
-    <header> 
-        <h1>PARROT CARD GAME</h1><p>0</p>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>🦜Parrot Card Game🦜</title>
 
-    <!--cartas do jogo-->
-    <main> 
-        <!-- cirando as cartas com javascript -->
-    </main>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+        />
 
-    <script src="script.js"></script>
-</body>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Parrot Card Game</h1>
+
+        <div class="info-jogo oculto">
+            <div class="tempo">
+                <ion-icon name="time-outline"></ion-icon>
+                <p></p>
+            </div>
+            <div class="puntuacao">
+                <ion-icon name="game-controller-outline"></ion-icon>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="cartas">
+            <!-- vao ser criadas cartas com JS -->
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="startNewGame.js"></script>
+        <script src="mainScript.js"></script>
+    </body>
 </html>
